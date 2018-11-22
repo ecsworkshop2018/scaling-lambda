@@ -18,7 +18,7 @@ resource "aws_lambda_function" "scale_ecs_cluster_container_instances_lambda" {
 resource "aws_cloudwatch_event_rule" "every_minutes" {
   name = "every-minutes"
   description = "Fires every minute"
-  schedule_expression = "rate(1 minutes)"
+  schedule_expression = "rate(1 minute)"
 }
 
 resource "aws_cloudwatch_event_target" "check_foo_every_five_minutes" {
