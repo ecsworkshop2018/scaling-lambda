@@ -136,6 +136,3 @@ class AWS:
 
     def get_instance_details(self, cluster_name, instance_arns):
         return self.ecs_client.describe_container_instances(cluster=cluster_name, containerInstances=instance_arns)
-
-
-lambda_handler(None, None)
